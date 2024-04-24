@@ -1,0 +1,73 @@
+---
+interface Props {
+	title?: string;
+	body?: string;
+	href?: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<nav class="navbar">
+    <a href="/index.html" class="link-anchor"><span class="logo">🚀 Project Design </span></a>
+    <ul>
+
+        <li class="nav-link">
+            <a href="/about" class="link-anchor">Main Page</a>
+        </li>
+        <li class="nav-link">
+            <a href="/contact" class="link-anchor">Project</a>
+        </li>
+        <li class="nav-link">
+            <a href="/services" class="link-anchor">Maqueta</a>
+        </li>
+        <li class="nav-link">
+            <a href="/moreinfo" class="link-anchor">Mas informacion</a>
+        </li>
+    </ul>
+    <button>
+        <svg class="w-6 h-6 md:h-5 md:inline-block md:w-5" data-icon="tabler:sun" height="1em" viewBox="0 0 24 24" width="1em"><symbol id="ai:tabler:sun"><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0-8 0m-5 0h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></symbol><use xlink:href="#ai:tabler:sun"></use></svg>
+        Dark
+        
+    </button>
+</nav>
+<style>
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backdrop-filter: blur(52px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0;
+        padding: 9px;
+    }
+    .nav-link{
+        display: inline;
+        margin: 0 20px;
+    }
+    .nav-link a{
+        text-decoration: none;
+    }
+    .logo{
+        color: white;
+    }
+    .link-anchor{
+        color: white
+    }
+
+    @media  (max-width:750px) and (min-width: 0px) {
+        .navbar{
+            padding: 16px;
+        }
+        .nav-link{
+            display: none;
+        
+        }
+        .link-anchor{
+            font-size: 0.9rem;
+        }
+    }
+</style>

@@ -1,0 +1,70 @@
+---
+interface Props {
+    img: string;
+    title: string;
+    text: string;
+    alt: string;
+}
+
+const { title, text, img, alt } = Astro.props;
+---
+
+<div class="text-onlydata">
+    <div class="img-and-line">
+        <img class="steps-img" src={img} alt={alt} loading="lazy" />
+        <div class="line"></div>
+    </div>
+    <div>
+        <h3 class="lowt-datafstepsheader">
+            {title}
+        </h3>
+        <p class="limitsteps poppins-light lowt-datafsteps">{text}</p>
+    </div>
+</div>
+
+<style>
+    .text-onlydata {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .img-and-line{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 3%;
+    }
+
+    .limitsteps {
+        width: 75%;
+    }
+    .lowt-datafsteps {
+        font-size: 14px;
+    }
+
+    .line {
+        width: 1px;
+        background-color: #94a3b880;
+        height: 100%;
+    }
+    .steps-img{
+        border: 1px solid blue;
+        border-radius: 30%;
+        padding: 6px;
+    }
+
+    @media  (max-width:750px) and (min-width: 0px){
+
+        .lowt-datafsteps{
+        font-size: 27px;
+    }
+
+        .limitsteps {
+            width: 90%;
+        }
+        .lowt-datafstepsheader{
+            font-size: 33px;
+        }
+    }
+</style>

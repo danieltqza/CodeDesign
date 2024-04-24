@@ -1,0 +1,133 @@
+---
+interface Props {
+    text: string;
+    img: string;
+    alt: string;
+    name: string;
+    curso: string;
+}
+
+const { img, text, alt, name,curso } = Astro.props;
+---
+
+<section class="content-flex">
+    <div class="slide-track">
+        <div class="slide">
+            <div class="testimonial-content">
+                <div>   
+                    <p class="text-tc poppins-regular">{text}</p>
+                </div>
+                <div class="profile">
+                    <div>
+                        <img class="perfil-img" src={img} alt={alt} />
+                    </div>
+                    <div class="info-client">
+                        <p class="name-client light">{name}</p>
+                        <p class="student poppins-extralight">{curso}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <!-- Agrega más divs de testimonios según sea necesario -->
+    </div>
+</section>
+
+
+
+<style>
+
+    .text-tc{
+        font-size: 20px;
+        width: 94%;
+    }
+
+    .info-client{
+        margin-top: 30px;
+    }
+
+    .name-client{
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .student{
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .testimonial-content{
+        padding: 30px;
+    }
+
+    .profile{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .perfil-img{
+        width: 42px;
+        border-radius: 30px;
+        margin-right: 6px;
+        margin-bottom: -30px;
+    }
+
+    .content-flex {
+
+        position: relative;
+        width: 100%;
+        animation: scroll 120s linear infinite;
+    }
+
+
+
+    .slide-track {
+        display: flex;
+        width: calc(100% * 5); /* Ancho total de todos los testimonios */
+
+    }
+
+    .slide {
+        width: 20%; /* Ancho de cada testimonio */
+        padding: 16px;
+        
+        box-sizing: border-box;
+    }
+
+    .testimonial-content {
+        border-radius: 9px;
+        background: var(--pp-bg);
+        border: 1px solid gray;
+    }
+
+    @media  (max-width:750px) and (min-width: 0px){
+
+        .perfil-img{
+        width: 60px;
+        }
+
+        .student{
+            font-size: 23px;
+        }
+
+        .name-client{
+            font-size: 26px;
+        }
+
+        .text-tc{
+            font-size: 28px;
+            width: 94%;
+        }
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-100% * 4)); /* Desplazamiento para mostrar el siguiente testimonio */
+        }
+        
+    }
+</style>

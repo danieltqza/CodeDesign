@@ -1,0 +1,25 @@
+---
+interface Props {
+	text: string;
+	href: string;
+}
+
+const { href, text } = Astro.props;
+---
+<div class="container-btna">
+	<a href={href} class="button-anchor">{text}</a>
+<a href={href} class="button-anchor">{text}</a>
+</div>
+<style>
+	.container-btna{
+		display: flex;
+		gap: 16spx;
+		justify-content: center;
+	}
+
+	.button-anchor {
+		border: 1px solid gray;
+		border-radius: 23px;
+		padding: 14px 32px;
+	}
+</style>

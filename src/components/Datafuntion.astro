@@ -1,0 +1,53 @@
+---
+interface Props {
+    title: string;
+    text: string;
+}
+
+const { title, text } = Astro.props;
+---
+
+<div class="text-onlydata">
+    <h3 class="lowh-dataf">
+        <img
+            class="check-img"
+            src="imagesxd/check.png"
+            alt="Checkbox with text"
+            loading="lazy"
+        />
+        {title}
+    </h3>
+    <p class="limit poppins-light lowt-dataf">{text}</p>
+</div>
+
+<style>
+    .check-img {
+        width: 20px;
+        border-radius: 50%;
+        background-color: greenyellow;
+    }
+    .text-onlydata {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .limit {
+        width: 75%;
+    }
+    .lowt-dataf {
+        font-size: 13px;
+    }
+    @media  (max-width:750px) and (min-width: 0px){
+
+        .limit{
+            width: 96%;
+        }
+        .lowt-dataf{
+            font-size: 26px;
+        }
+        .lowh-dataf{
+            font-size: 33px;
+        }
+    }
+
+
+</style>

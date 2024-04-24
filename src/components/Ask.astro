@@ -1,0 +1,32 @@
+---
+interface Props {
+    pregunta: string;
+    text: string;
+}
+
+const { pregunta, text } = Astro.props;
+---
+
+<article class="content-askme">
+    <div class="askme-flex">
+    <div>
+        <img src="imagesxd/terminal.svg" alt="terminal preview and point in the end" />
+    </div>
+    <div>
+        <h3 class="poppins-bold">{pregunta}</h3>
+        <p class="poppins-light">{text}</p>
+    </div>
+</div>
+</article>
+
+<style>
+    .content-askme {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    .askme-flex{
+        display: flex;
+    }
+</style>

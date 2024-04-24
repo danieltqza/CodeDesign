@@ -1,0 +1,49 @@
+---
+interface Props {
+    title: string;
+    text: string;
+    img?: string;
+    alt?: string;
+}
+
+const { img, title, text, alt } = Astro.props;
+---
+
+<section class="container-features">
+    <div>
+        <img class="img-features" src={img} alt={alt} loading="lazy" />
+    </div>
+    <div>
+        <h2 class="poppins-bold low">{title}</h2>
+        <p class="poppins-extralight lowtext">{text}</p>
+    </div>
+</section>
+
+<style>
+    .container-features{
+        display: flex;
+        text-align: left;
+    }
+    .img-features{
+        width:44px;
+        border-radius: 9px;
+        margin: 12px;
+        background: var(--pp-bg);
+        border: var(--pp-bb);
+    }
+    .low{
+        font-size: 20px;
+    }
+    .lowtext{
+        font-size: 13px;
+    }
+    @media (max-width: 750px) and (min-width: 0px){
+        .lowtext{
+            font-size: 23px;
+            width: 130%;
+        }
+        .low{
+        font-size: 27px;
+        }
+    }
+</style>

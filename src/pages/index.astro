@@ -1,0 +1,538 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import Features from "../components/Features.astro";
+import Funcion from "../components/Funcion.astro";
+import Datafuntion from "../components/Datafuntion.astro";
+import Steps from "../components/Steps.astro";
+import Content from "../components/Content.astro";
+import Testimonios from "../components/Testimonios.astro";
+import Ask from "../components/Ask.astro";
+---
+
+<Layout
+	title="Welcome to Astro."
+	description="Proyecto indisciplinario de diseño web, con caracteristicas basadas en la autodictación">
+	<main class="mainlayout">
+		<h1 class="main-title poppins-bold">
+			Proyecto Interdisciplinario de Diseño Web 2do Informatica "B"
+		</h1>
+		<div class="container-main-text">
+			<p class="main-text poppins-extralight">
+				Presentación realizada en una página web
+			</p>
+		</div>
+		<Button href="#integrants" text="Integrants" />
+		<img
+			class="img-center"
+			src="imagesxd/hero.svg"
+			alt="Main hero, person jumping to another rock"
+		/>
+		<div class="integrants" id="integrants">
+			<span class="text-integrants">
+				<svg
+					class="h-5 w-5 inline-block align-text-bottom"
+					data-icon="tabler:info-square"
+					height="1em"
+					viewBox="0 0 24 24"
+					width="1em"
+					><symbol id="ai:tabler:info-square"
+						><g
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							><path
+								d="M12 9h.01M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+							></path><path d="M11 12h1v4h1"></path></g
+						></symbol
+					><use xlink:href="#ai:tabler:info-square"></use></svg
+				> Integrantes :
+			</span><p text-integrants>Mateo Logacho, Dillan Toaquiza, Marck Roman</p>
+		</div>
+		<section>
+			<div class="container-textfeat">
+				<span class="features-textd">Features</span>
+				<h2 class="poppins-bold header-additionalfea">
+					Caracteristicas de nuestro proyecto
+				</h2>
+				<p class="text-additionalfea poppins-light">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Nesciunt eveniet veritatis nobis exercitationem obcaecati
+					ea, accusantium omnis praesentium ipsam velit odio quo
+					accusamus excepturi culpa sed! Consequuntur maiores
+					reiciendis beatae.
+				</p>
+			</div>
+			<div class="features-css">
+				<div class="align-features">
+					<Features
+						title="Presentación"
+						text="Nuestra presentación se basa en una página web"
+						img="imagesxd/Html5.svg"
+						alt="xd"
+					/>
+					<Features
+						title="Guiado"
+						text="La página fue creada con el framework Astro y inspirada por  una plantilla Astrowind (No usada)"
+						img="imagesxd/astro.svg"
+						alt="xd"
+					/>
+					<Features
+						title="Página testeada"
+						text="Página fue testeada: rendimiento, buenas practicas, SEO."
+						img="imagesxd/list-check.svg"
+						alt="list of a check aproves somethings"
+					/>
+					<Features
+						title="Github"
+						text="Página subida a github donde se puede ver el c ódigo"
+						img="imagesxd/github.svg"
+						alt="xd"
+					/>
+					<Features
+						title="Autodictada"
+						text="Para crear esta página se necesito salir de los conocimientos del colegio"
+						img="imagesxd/youtube.svg"
+						alt="xd"
+					/>
+					<Features
+						title="Legible"
+						text="Nuestro código de la página es legible para todo aquel que tenga conocimiento minimo de Astro y Html"
+						img="imagesxd/accessible.svg"
+						alt="xd"
+					/>
+				</div>
+			</div>
+		</section>
+		<div class="functions-text">
+			
+			<span class="text-functionsd">Functions</span>
+			<h2 class="header-functionsd poppins-bold">Funcionalidades de nuestro Proyecto</h2>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+				iste dolor quisquam!
+			</p>
+		</div>
+		<article class="datafuntion-fixing">
+			<section class="container-funtiondata">
+				<Funcion
+					img="imagesxd/sharing.svg"
+					alt="People sharing knowledge"
+				/>
+				<div class="text-funtiondata">
+					<Datafuntion
+						title="Maqueta"
+						text="Maqueta realizada con componentes electronicos y todo referente a Soporte Tecnico"
+					/>
+					<Datafuntion
+						title="Salida"
+						text="Tuvimos que salir de la estructura del colegio, para lograr conocimientos mas avanzados"
+					/>
+					<Datafuntion
+						title="Responsive"
+						text="Nuestra página es responsive lo que quiere decir que se adapta a tamaños moviles, tables y PC"
+					/>
+				</div>
+			</section>
+			<section class="container-funtiondata reverse">
+				<Funcion
+					img="imagesxd/task.svg"
+					alt="Person working in homeworks"
+				/>
+				<div class="text-funtiondata">
+					<Datafuntion
+						title="Trabajos"
+						text="Al elaborar el proyecto nos se enfreto a muchos puntos de vista no vistos en el colegio"
+					/>
+					<Datafuntion
+						title="Colaboración"
+						text="Tambien al poner nuestras ideas en la maquetación de la página se logro unificar mas el trabajo en equipo"
+					/>
+				</div>
+			</section>
+			<section class="container-funtiondata">
+				<Funcion
+					img="imagesxd/modeling.svg"
+					alt="People waiting a girl for work"
+				/>
+				<div class="text-funtiondata">
+					<Datafuntion
+						title="Consejos"
+						text="Se pidio consejos a personas con un conocimiento mas profundo de Diseño Web, profeso/a, estudiantes de grados superiores, y documentación"
+					/>
+					<Datafuntion
+						title="Activdad"
+						text="Se necesito crear otras páginas web para adaptar el entorno de desarrollo"
+					/>
+					<Datafuntion
+						title="Disciplina"
+						text="Logramos constar de una disciplina de estudio para la página"
+					/>
+				</div>
+			</section>
+			<section class="container-funtiondata reverse">
+				<Funcion
+					img="imagesxd/articles.svg"
+					alt="Girl searching documentation"
+				/>
+				<div class="text-funtiondata">
+					<Datafuntion
+						title="Más páginas"
+						text="Creamos un total de mas de 4 páginas fuera del proyecto indisciplinario"
+					/>
+					<Datafuntion
+						title="Más páginas"
+						text="Creamos un total de mas de 4 páginas fuera del proyecto indisciplinario"
+					/>
+					<Datafuntion
+						title="Opiniones"
+						text="Al realizar el sitio web surgieron varías opiniones entre nosotros cuales juntamos y elaboramos la maquetación "
+					/>
+					<Datafuntion
+						title="JavaScript"
+						text="Logramos desarrollar un poco de logica de programación aunque sea muy poca para programar en el lenguaje JavaScript "
+					/>
+					<Datafuntion
+						title="Lenguajes"
+						text="Usamos los lenguajes: Astro (FrameWork), HTML (Estructura de la página), CSS (Estilos de la página), JavaScript ( Más funcionalidad a la página)."
+					/>
+				</div>
+			</section>
+			<section class="container-funtiondata">
+				<Funcion img="imagesxd/time.avif" alt="time clock" />
+				<div class="text-funtiondata">
+					<h2>¿Como lo hicimos?, aquí nuestros pasos</h2>
+					<Steps
+						img="imagesxd/tractor.svg"
+						alt="a"
+						title="Step 1:"
+						text="Maquetar la página web con HTML, dar la estrcutura para guiarse y mejorar un poco la productividad"
+					/>
+					<Steps
+						img="imagesxd/structure.svg"
+						alt="a"
+						title="Step 2:"
+						text="Compartimos opiniones, ideas, recomendaciones, sobre la estructura inicial del HTML"
+					/>
+					<Steps
+						img="imagesxd/paint.svg"
+						alt="a"
+						title="Step 3:"
+						text="Empezamos con la decoración en CSS, dando nuestro propio estilo "
+					/>
+					<Steps
+						img="imagesxd/tractor.svg"
+						alt="a"
+						title="Step 4:"
+						text="Nos debatimos de nuevo, y decidimos por inspirarnos en la página AstroWind, y AstroShip, páginas creadas por los usuarios (No utilizamos su código, lo repetimos, dando nuestros estilos asi vemos nuestros errores."
+					/>
+					<Steps
+						img="imagesxd/tractor.svg"
+						alt="a"
+						title="Step 5:"
+						text="Maquetar la página web con HTML, dar la estrcutura para guiarse y mejorar un poco la productividad"
+					/>
+					<Steps
+						img="imagesxd/tractor.svg"
+						alt="a"
+						title="Step 6:"
+						text="Maquetar la página web con HTML, dar la estrcutura para guiarse y mejorar un poco la productividad"
+					/>
+				</div>
+			</section>
+		</article>
+		<section class="center-gridcontent">
+			<h2>Componentes del sitio web o página web</h2>
+			<div class="contenido-gridxd">
+				<Content
+					img="imagesxd/structure.svg"
+					alt="Layout of web site"
+					title="Header"
+					text="Contiene un encabezado donde se permite navegar a travez de las páginas"
+				/>
+				<Content
+					img="imagesxd/table-minus.svg"
+					alt="Layout of web site but main content"
+					title="Main"
+					text="Tiene un contenido main, donde es el contenido principal de la página"
+				/>
+				<Content
+					img="imagesxd/layout-bottombar.svg"
+					alt="Layout of web site but footer content or final content"
+					title="Footer"
+					text="Contiene una parte final, osea un footer donde se ubica al final de la página"
+				/>
+				<Content
+					img="imagesxd/stack-3.svg"
+					alt="A lot of capes 4"
+					title="Semantico"
+					text="El sitio web y sus páginas contiene Semantica Ej:section, article, main, nav, header, footer, aside"
+				/>
+				<Content
+					img="imagesxd/layout-grid.svg"
+					alt="Funcionality of Grid"
+					title="Grid"
+					text="Usamos grid que permite mover bloques a travez de los ejes Y, X, display:grid;"
+				/>
+				<Content
+					img="imagesxd/columns-3.svg"
+					alt="Funcionality of Flexbox"
+					title="Flexbox"
+					text="Usamos flexbox que permite mover bloques pero solo a travez de un eje, sea Y o X, solo se puede eligir uno, display:flex;"
+				/>
+				<Content
+					img="imagesxd/svg.svg"
+					alt="A svg preview of Svg icon"
+					title="Svg"
+					text="Utilizamos componentes Svg, que permite una mayor optimización a la página web"
+				/>
+				<Content
+					img="imagesxd/typescript.svg"
+					alt="Logo of TypeScript"
+					title="TypeScript"
+					text="Utilizamos TypeScript lo que nos permitio reutilizar mas los componentes con mayor facilidad"
+				/>
+				<Content
+					img="imagesxd/astro.svg"
+					alt="Logo of Astro FrameWork"
+					title="Astro"
+					text="Usamos el FrameWork Astro, lo que nos permitio completar el sitio web de una forma mas productiva y efectivda"
+				/>
+			</div>
+		</section>
+		<section>
+			<h2 class="testimonial-ct poppins-bold">Testimonios</h2>
+			<div class="content-testimonios">
+				<Testimonios
+					text="Ps q la página está buena 	🤠🙏🏻"
+					img="imagesxd/jt.jpg"
+					alt="hola"
+					name="Jorge Turquerres"
+					curso="Estudiande de 2do informatica B"
+				/>
+
+				<Testimonios
+					text="Una página web presentada por estudiantes del 2do B especialidad Informática me parece muy buena ya que tiene puntos relevantes en la creación de una página web y que nos sirven para orientarnos y así dirigirnos a las secciones que tenga la página."
+					img="imagesxd/CR7.jpg"
+					alt="Cristiano Ronaldo person preview"
+					name="Darwin Nieve"
+					curso="Estudiante de 3ro informatica A"
+				/>
+				<Testimonios 
+					text="La página está good explica muy bien paso a paso todo sobre las páginas web creadas en HTML y css muy buena explicación"
+					img="imagesxd/goku.jpg"
+					alt="Preview of goku character anime"
+					name="Kevin Cuasapaz"
+					curso="Estudiante de 2do informatica B"
+				/>
+				<Testimonios 
+					text="Página atractiva a primera vista, pero falta muchas características de SEO, mejor redacción, mas semántica, a comparación de otras páginas o sitios web se podría decir una página relativamente normal o mala"
+					img="imagesxd/art.jpg"
+					alt="Cat meme preview"
+					name="Oscar Paguay"
+					curso="Colegio Arturo Borja estudiante de 2do mecanica A"
+				/>
+
+			</div>
+		</section>
+		<article>
+			<h2>Preguntas que nos hicimos</h2>
+			<div class="grid-askxdd">
+				<Ask pregunta="¿Y si mejor hacemos un video o otra cosa?" text="Nos planteamos la pregunta de mejor dejar la página web y hacer otra presentación mas facil, pero no al final decidimos no rendirnos por una dificultad que se puede superar con disciplina"  />
+				<Ask pregunta="¿Mandamos a hacer la página?" text="Al vernos acorrolados por la primera pregunta, se nos vino por la mente la idea de mandar a hacer la página, pero seguimos firmes en nuestra decisión y no"  />
+				<Ask pregunta="¿Copiamos el código o usamos una plantilla?" text="Al no usar las 2 preguntas anteriores podríamos perfectamente copiar el código de otra página o usar una plantilla, pero no logramos descartar esas ideas absurdas y crear nuestra propia página"  />
+				<Ask pregunta="¿?" text="Hola"  />
+				<Ask pregunta="Por que?" text="Hola"  />
+				<Ask pregunta="Por que?" text="Hola"  />
+				<Ask pregunta="Por que?" text="Hola"  />
+				<Ask pregunta="Por que?" text="Hola"  />
+				<Ask pregunta="Por que?" text="Hola"  />
+				<Ask pregunta="Por que?" text="Hola"  />
+
+			</div>
+		</article>
+	</main>
+
+	<style>
+
+		.grid-askxdd{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.testimonial-ct {
+			font-size: 2.6em;
+			text-align: center;
+			color: var(--decoration);
+		}
+
+		.content-testimonios {
+			overflow-x: hidden;
+			white-space: wrap;
+			display: flex;
+		}
+
+		.center-gridcontent {
+			display: grid;
+			margin: 0 auto;
+		}
+
+		.contenido-gridxd {
+			display: grid;
+
+			margin: 0 auto;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		}
+
+		.main-title {
+			text-align: center;
+		}
+
+		.container-main-text {
+			display: grid;
+			place-items: center;
+		}
+
+		.main-text {
+			text-align: center;
+			width: 67%;
+			font-size: 1.12em;
+			margin-bottom: 40px;
+		}
+		.img-center {
+			width: 75%;
+			height: 50vh;
+			display: block;
+			margin: 40px auto;
+		}
+
+		.integrants {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #1e293b;
+			margin: 30px 0;
+		}
+
+		.text-integrants {
+			font-weight: bold;
+			font-size: 21px;
+		}
+
+		.header-functionsd{
+			font-size: 32px;
+		}
+
+		.text-functionsd{
+			color:	purple;
+			font-size: 21px;
+		}
+
+		.features-textd {
+			font-weight: bold;
+			color: #bfdbfe;
+		}
+
+		.features-css {
+			display: grid;
+			place-items: center;
+		}
+
+		.container-textfeat {
+			text-align: center;
+		}
+
+		.text-additionalfea {
+			width: 70%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			text-align: center;
+			color: gray;
+		}
+
+		.header-additionalfea {
+			font-size: 30px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+
+		.container-funtiondata {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.text-funtiondata {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 40%;
+		}
+
+		.functions-text {
+			text-align: center;
+		}
+
+		.align-features {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 16px;
+			width: 60%;
+		}
+
+		.datafuntion-fixing {
+			display: grid;
+			gap: 30px;
+		}
+
+		.reverse {
+			flex-direction: row-reverse;
+		}
+
+		@media (max-width: 750px) and (min-width: 0px) {
+			.mainlayout {
+				width: 750px;
+			}
+
+			.main-title {
+				margin-top: 60px;
+				text-align: center;
+				font-size: 2em;
+			}
+			.container-funtiondata {
+				flex-direction: column-reverse;
+			}
+			.align-features {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 16px;
+				width: 75%;
+			}
+			.features-css {
+				place-items: baseline;
+				margin-left: 30px;
+			}
+			.datafuntion-fixing {
+				width: 95%;
+				margin: 0 auto;
+			}
+
+			.datafuntion-fixing {
+				margin-left: 30px;
+			}
+
+			.text-funtiondata {
+				width: 100%;
+			}
+
+			.contenido-gridxd {
+				display: grid;
+				margin: 0 auto;
+				grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+			}
+		}
+	</style>
+</Layout>

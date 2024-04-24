@@ -1,0 +1,77 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title,description } = Astro.props;
+import Endpage from "../components/Endpage.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="description" content={description}>
+		<link rel="stylesheet" href="/css/font.css">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<header>
+			<Nav />
+		</header>
+			<slot />
+		<footer>
+			<Endpage />
+		</footer>
+	</body>
+</html>
+<style is:global>
+	:root {
+		color-scheme: light dark;
+		--background-color: rgb(3 6 32);
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--pp-bg: linear-gradient(180deg, rgba(224, 204, 250, 0.33) 0%, rgba(224, 204, 250, 0.0825) 100%);
+		--pp-bb: 1px solid rgba(113, 24, 226, 1);
+		--accent-dark: 49, 10, 101;
+		--decoration: rgb(79 70 229);
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: var(--background-color);
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+
+	body{
+		margin: 0;
+		padding: 0;
+		padding-top: 60px;
+		box-sizing: border-box;
+	}
+
+
+
+</style>

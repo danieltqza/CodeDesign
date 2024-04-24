@@ -1,0 +1,46 @@
+---
+interface Props {
+    title: string;
+    text: string;
+    img: string;
+    alt: string;
+}
+
+const { img, title, text, alt } = Astro.props;
+---
+
+
+<section class="content-flex">
+    <div>
+        <img src = {img} alt = {alt} loading="lazy">
+    </div>
+    <div>
+        <h2 class="more-header poppins-bold">{title}</h2>
+        <p class="more-size poppins-light">{text}</p>
+    </div>
+</section>
+
+<style>
+
+
+
+    .content-flex{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        margin: 16px;
+        border: 1px solid gray;
+        background: var(--pp-bg);
+        border-radius: 9px;
+    }
+
+    @media (max-width: 750px) and (min-width: 0px){
+        .more-header{
+        font-size: 31px;
+    }
+
+    .more-size{
+        font-size: 26px;
+    }
+    }
+</style>

@@ -1,0 +1,33 @@
+---
+
+interface Props {
+    img: string;
+    alt: string;
+
+}
+
+const { img, alt } = Astro.props;
+---
+
+    <div>
+        <img class="hero-img" src={img} alt={alt} loading="lazy" />
+    </div>
+
+
+<style>
+
+    .hero-img {
+        background-color: rgba(22, 80, 131, 0.1);
+        width: 450px;
+        margin-right: 33px;
+    }
+
+    @media (max-width: 750px) and (min-width: 0px){
+        .hero-img{
+
+            width: 96.3%;
+        }
+    }
+    
+
+</style>
