@@ -8,6 +8,7 @@ import Steps from "../components/Steps.astro";
 import Content from "../components/Content.astro";
 import Testimonios from "../components/Testimonios.astro";
 import Ask from "../components/Ask.astro";
+import Vipst from '../components/Vipst.astro'
 ---
 
 <Layout
@@ -49,7 +50,9 @@ import Ask from "../components/Ask.astro";
 						></symbol
 					><use xlink:href="#ai:tabler:info-square"></use></svg
 				> Integrantes :
-			</span><p text-integrants>Mateo Logacho, Dillan Toaquiza, Marck Roman</p>
+			</span><p text-integrants>
+				Mateo Logacho, Dillan Toaquiza, Marck Roman
+			</p>
 		</div>
 		<section>
 			<div class="container-textfeat">
@@ -107,9 +110,10 @@ import Ask from "../components/Ask.astro";
 			</div>
 		</section>
 		<div class="functions-text">
-			
 			<span class="text-functionsd">Functions</span>
-			<h2 class="header-functionsd poppins-bold">Funcionalidades de nuestro Proyecto</h2>
+			<h2 class="header-functionsd poppins-bold">
+				Funcionalidades de nuestro Proyecto
+			</h2>
 			<p>
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
 				iste dolor quisquam!
@@ -302,62 +306,157 @@ import Ask from "../components/Ask.astro";
 				/>
 			</div>
 		</section>
+		<svg
+			width="138"
+			height="138"
+			viewBox="0 0 138 138"
+			class="mask_d5067d svg_a6bf1c"
+			aria-hidden="true"
+			><foreignObject
+				x="0"
+				y="0"
+				width="120"
+				height="120"
+				mask="url(#svg-mask-avatar-status-round-120)"
+				><div class="avatarStack__789b4">
+					<img
+						src="https://cdn.discordapp.com/avatars/472988070006882305/6ff9b748650160dd2da19434a72acde8.webp?size=240"
+						alt=" "
+						class="avatar__991e2"
+						aria-hidden="true"
+					/>
+				</div></foreignObject
+			><circle
+				fill="white"
+				r="20"
+				cx="100"
+				cy="100"
+				style="opacity: 0.45;"></circle><rect
+				width="24"
+				height="24"
+				x="88"
+				y="88"
+				fill="#23a55a"
+				mask="url(#svg-mask-status-online)"
+				class="pointerEvents__585e6"></rect></svg
+		>
+
 		<section>
 			<h2 class="testimonial-ct poppins-bold">Testimonios</h2>
 			<div class="content-testimonios">
-				<Testimonios
-					text="Ps q la página está buena 	🤠🙏🏻"
-					img="imagesxd/jt.jpg"
-					alt="hola"
-					name="Jorge Turquerres"
-					curso="Estudiande de 2do informatica B"
-				/>
+			<section class="content-vip">
+				<div class="vip-width">
+					
+					<Vipst
+						text="Revisar la escritura, revisa la composición del header, la redirección del header main page, quitar el modo oscuro y revisar la escritura de la página completa."
+						img="imagesxd/vip.webp"
+						alt="svg preview"
+						name="Charly"
+						curso="Costa Rica, Desarrollador Web"
+					/>
+				</div>
+				
+			</section>
+		</div>
+			
+			<div class="content-testimonios">
+				
+				<section class="content-flex">
+					<div class="slide-track">
+						<Testimonios
+							text="Ps q la página está buena 	🤠🙏🏻"
+							img="imagesxd/jt.jpg"
+							alt="hola"
+							name="Jorge Turquerres"
+							curso="Estudiande de 2do informatica B"
+						/>
 
-				<Testimonios
-					text="Una página web presentada por estudiantes del 2do B especialidad Informática me parece muy buena ya que tiene puntos relevantes en la creación de una página web y que nos sirven para orientarnos y así dirigirnos a las secciones que tenga la página."
-					img="imagesxd/CR7.jpg"
-					alt="Cristiano Ronaldo person preview"
-					name="Darwin Nieve"
-					curso="Estudiante de 3ro informatica A"
-				/>
-				<Testimonios 
-					text="La página está good explica muy bien paso a paso todo sobre las páginas web creadas en HTML y css muy buena explicación"
-					img="imagesxd/goku.jpg"
-					alt="Preview of goku character anime"
-					name="Kevin Cuasapaz"
-					curso="Estudiante de 2do informatica B"
-				/>
-				<Testimonios 
-					text="Página atractiva a primera vista, pero falta muchas características de SEO, mejor redacción, mas semántica, a comparación de otras páginas o sitios web se podría decir una página relativamente normal o mala"
-					img="imagesxd/art.jpg"
-					alt="Cat meme preview"
-					name="Oscar Paguay"
-					curso="Colegio Arturo Borja estudiante de 2do mecanica A"
-				/>
+						<Testimonios
+							text="Una página web presentada por estudiantes del 2do B especialidad Informática me parece muy buena ya que tiene puntos relevantes en la creación de una página web y que nos sirven para orientarnos y así dirigirnos a las secciones que tenga la página."
+							img="imagesxd/CR7.jpg"
+							alt="Cristiano Ronaldo person preview"
+							name="Darwin Nieve"
+							curso="Estudiante de 3ro informatica A"
+						/>
+						<Testimonios
+							text="La página está good explica muy bien paso a paso todo sobre las páginas web creadas en HTML y css muy buena explicación"
+							img="imagesxd/goku.jpg"
+							alt="Preview of goku character anime"
+							name="Kevin Cuasapaz"
+							curso="Estudiante de 2do informatica B"
+						/>
 
+						<Testimonios
+							text="Página atractiva a primera vista, pero falta muchas características de SEO, mejor redacción, mas semántica, a comparación de otras páginas o sitios web se podría decir una página relativamente normal o mala"
+							img="imagesxd/art.jpg"
+							alt="Cat meme preview"
+							name="Oscar Paguay"
+							curso="Colegio Arturo Borja estudiante de 2do mecanica A"
+						/>
+
+						<Testimonios
+							text="Revisar la escritura, revisa la composición del header, la redirección del header main page, quitar el modo oscuro y revisar la escritura de la página completa."
+							img="imagesxd/vip.webp"
+							alt="svg preview"
+							name="Charly"
+							curso="Costa Rica, Desarrollador Web"
+						/>
+						<Testimonios
+							text="Una muy buena página, la información está legible, y aunque no hay hentai, me interesó leer la información respecto al tema, atractiva y atrapante, muy buena presentación."
+							img="imagesxd/juan.jpg"
+							alt="Anime girl"
+							name="Juan Chaguendo"
+							curso="2do Informatica B"
+						/>
+
+					
+					</div>
+				</section>
 			</div>
 		</section>
 		<article>
 			<h2>Preguntas que nos hicimos</h2>
 			<div class="grid-askxdd">
-				<Ask pregunta="¿Y si mejor hacemos un video o otra cosa?" text="Nos planteamos la pregunta de mejor dejar la página web y hacer otra presentación mas facil, pero no al final decidimos no rendirnos por una dificultad que se puede superar con disciplina"  />
-				<Ask pregunta="¿Mandamos a hacer la página?" text="Al vernos acorrolados por la primera pregunta, se nos vino por la mente la idea de mandar a hacer la página, pero seguimos firmes en nuestra decisión y no"  />
-				<Ask pregunta="¿Copiamos el código o usamos una plantilla?" text="Al no usar las 2 preguntas anteriores podríamos perfectamente copiar el código de otra página o usar una plantilla, pero no logramos descartar esas ideas absurdas y crear nuestra propia página"  />
-				<Ask pregunta="¿?" text="Hola"  />
-				<Ask pregunta="Por que?" text="Hola"  />
-				<Ask pregunta="Por que?" text="Hola"  />
-				<Ask pregunta="Por que?" text="Hola"  />
-				<Ask pregunta="Por que?" text="Hola"  />
-				<Ask pregunta="Por que?" text="Hola"  />
-				<Ask pregunta="Por que?" text="Hola"  />
-
+				<Ask
+					pregunta="¿Y si mejor hacemos un video o otra cosa?"
+					text="Nos planteamos la pregunta de mejor dejar la página web y hacer otra presentación mas facil, pero no al final decidimos no rendirnos por una dificultad que se puede superar con disciplina"
+				/>
+				<Ask
+					pregunta="¿Mandamos a hacer la página?"
+					text="Al vernos acorrolados por la primera pregunta, se nos vino por la mente la idea de mandar a hacer la página, pero seguimos firmes en nuestra decisión y no"
+				/>
+				<Ask
+					pregunta="¿Copiamos el código o usamos una plantilla?"
+					text="Al no usar las 2 preguntas anteriores podríamos perfectamente copiar el código de otra página o usar una plantilla, pero no logramos descartar esas ideas absurdas y crear nuestra propia página"
+				/>
 			</div>
 		</article>
 	</main>
 
 	<style>
 
-		.grid-askxdd{
+		.vip-width {
+			display: flex;
+			width: 100%; /* Ancho total de todos los testimonios */
+		}
+
+		.slide-track {
+			display: flex;
+			width: calc(100% * 5); /* Ancho total de todos los testimonios */
+		}
+
+		.content-vip {
+			position: relative;
+			width: 100%;
+		}
+
+		.content-flex {
+			position: relative;
+			width: 100%;
+			animation: scroll 160s linear infinite;
+		}
+
+		.grid-askxdd {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 		}
@@ -421,12 +520,12 @@ import Ask from "../components/Ask.astro";
 			font-size: 21px;
 		}
 
-		.header-functionsd{
+		.header-functionsd {
 			font-size: 32px;
 		}
 
-		.text-functionsd{
-			color:	purple;
+		.text-functionsd {
+			color: purple;
 			font-size: 21px;
 		}
 

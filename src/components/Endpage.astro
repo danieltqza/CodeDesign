@@ -3,14 +3,26 @@
 ---
 
 <div class="decoration-footer">
+    <div class="flex-column">
+        <div>
+            <h2 class="endpage-h2">
+                Página inspirada en <a
+                    href="https://astrowind.vercel.app"
+                    target="_blank">AstroWind</a
+                >
+            </h2>
+        </div>
+ 
     <div>
-        <h2 class="endpage-h2">
-            Página inspirada en <a
-                href="https://astrowind.vercel.app"
-                target="_blank">AstroWind</a
-            >
-        </h2>
+        <p>
+            Se realizo gracias a la estructura, cabe recalcar que nunca usamos
+            el código de astrowind, astroship, que son plantillas, lo que
+            realmente hicimos fue ver su estructura y aprendes a hacer desde 0
+            todo lo que ellos hicieron,nunca usamos su código o su plantilla
+            nosotros creamos desde 0 todo
+        </p>
     </div>
+</div>
     <div class="tecnologias-flex">
         <span class="decoration">Tecnologias</span>
         <div>
@@ -52,11 +64,15 @@
         color: #d0adf0;
     }
 
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+
     .ul-liend {
         list-style: none;
         margin: 12px;
-    }   
-
+    }
 
     .decoration-footer {
         display: flex;

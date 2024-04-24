@@ -75,15 +75,15 @@ const { img, text, alt, name,curso } = Astro.props;
 
 
     .slide {
-        width: auto; /* Ancho de cada testimonio */
-        padding: 16px;
-        width: 6%; 
+        padding: 8px;
+        width: 45%;
+        margin: 0 auto; 
         box-sizing: border-box;
     }
 
     .testimonial-content {
         border-radius: 9px;
-        background: var(--pp-bg);
+        background: linear-gradient(180deg, rgba(222, 252, 28, 0.33) 0%, rgba(228, 214, 25, 0.083) 100%);
         width: 72%;
         border: 1px solid gray;
     }
@@ -106,14 +106,5 @@ const { img, text, alt, name,curso } = Astro.props;
             font-size: 28px;
             width: 94%;
         }
-    }
-    @keyframes scroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(calc(-100% * 4)); /* Desplazamiento para mostrar el siguiente testimonio */
-        }
-        
     }
 </style>
